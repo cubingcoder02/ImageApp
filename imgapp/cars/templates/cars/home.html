@@ -1,0 +1,8 @@
+{% extends "cars/base.html" %}
+{% block content %}
+    {% for post in posts %}
+    <h1>{{post.title}}</h1>
+    <p>By {{post.author}} on {{post.date_posted}}</p>
+    <p> Image id - {{post.img_id}} </p>
+    {% endfor %}
+{% endblock content %}
